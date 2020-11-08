@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+.App {
+  min-height: 150%;
+  background-color: #151515;
+  background-image: url("/src/pages/img/asfalt-light\ \(1\).png");
+}
+
+#root {
+  display: block;
+}
+
+/* --------------------------HEADER SECTION -------------------------*/
+.navbar {
+  background-color: #0a0a0a;
+  background-image: url("/src/pages/img/black-felt.png");
+  box-shadow: 0 0 10px 0 black;
+  opacity: 0.9;
+  border-bottom: 5px solid #b8a60b;
+  transition-property: opacity;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  transition-delay: 0.1s;
+}
+
+.navbar:hover {
+  opacity: 1;
+}
+
+.dropdown {
+  color: gold;
+  background-color: gold;
+}

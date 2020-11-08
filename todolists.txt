@@ -1,0 +1,29 @@
+DJ's MAKAN TODO LISTS
+
+--------------------------------------
+Theme: Black for main and gold for subsidiary color
+
+
+- Header [/]
+    Logo Icon [/]
+    Navbar [/]
+        Home [/]
+        Menu [/]
+        Contact Us [/]
+
+- Home []
+    Video for background (blurred)[]
+    Info of DJ's MAKAN []
+
+- Menu []
+    List of Buttons with name of foods
+
+- Info []
+    Info of the Foods
+
+- Contact Us []
+    Copyrights []
+    Location []
+    Fb Link []
+    Number []
+    Email []
