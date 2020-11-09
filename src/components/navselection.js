@@ -17,8 +17,7 @@ function Navselection() {
 
     setStyle((prevValue) => {
       if (type === "mouseenter") {
-        ...prevValue,
-        [name]
+        [name]: 
       } else if (type === "mouseleave") {
       }
     });
