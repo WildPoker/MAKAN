@@ -15,6 +15,7 @@ function Home() {
         <div class="bg-image"></div>
         <div class="bg-text">
           <h1>DJ's MAKAN</h1>
+          <p>BLABLABLABLA I HAVE NOTHING TO APISCAC</p>
         </div>
       </Container>
     </div>
