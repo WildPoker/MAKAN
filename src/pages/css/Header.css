@@ -3,7 +3,7 @@
   background-color: #0a0a0a;
   background-image: url("/src/pages/img/black-felt.png");
   box-shadow: 0 0 10px 0 black;
-  opacity: 0.9;
+  opacity: 0.98;
   border-bottom: 5px solid #b8a60b;
   /* Transition effect when mouse is hovered to the Header section */
   transition-property: opacity;

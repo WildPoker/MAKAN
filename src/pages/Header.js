@@ -3,6 +3,7 @@ import Selection from "../components/navbar.js";
 
 //--------------- MAIN HEADER -----------------
 // Rendering the navbar.js
+
 function Header() {
   return (
     <header>

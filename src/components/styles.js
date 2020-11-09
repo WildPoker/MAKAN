@@ -5,7 +5,7 @@ const styles = {
   },
   customTextHover: {
     color: "#b8a60b",
-    fontSize: "25px",
+    fontSize: "30px",
   },
   customWidth: {
     maxWidth: "1250px",
