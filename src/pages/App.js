@@ -1,6 +1,7 @@
 import "./css/App.css";
 import Header from "./Header.js";
 import Home from "./Home.js";
+import Menu from "./Menu.js";
 
 //------------ MAIN BODY --------------
 //Returning all the pages
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Home />
+      <Menu />
     </div>
   );
 }

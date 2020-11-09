@@ -8,54 +8,26 @@ import { NearMeTwoTone } from "@material-ui/icons";
 
 //List of Header Buttons
 function Navselection() {
-  //Changing the style of the text when hovered or not
-  const [style, setStyle] = useState(false);
-
-  function handleHover(event) {
-    const type = event.type;
-    const name = event.target.name;
-
-    setStyle((prevValue) => {
-      if (type === "mouseenter") {
-        [name]: 
-      } else if (type === "mouseleave") {
-      }
-    });
-  }
-
-  function handleHoverOut() {
-    setStyle(false);
-  }
   return (
     <Nav className="mr-auto">
-      <Nav.Link
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
-        name="Home"
-        href="#features"
-        style={style ? styles.customTextHover : styles.customText}
-      >
+      <Nav.Link name="Home" href="#features" style={styles.customText}>
         <HomeOutlinedIcon />
         <a>Home</a>
       </Nav.Link>
       <Nav.Link
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
         name="Menu"
         href="#pricing"
         className="nav-text"
-        style={style ? styles.customTextHover : styles.customText}
+        style={styles.customText}
       >
         <RestaurantMenuOutlinedIcon />
         <a>Menu</a>
       </Nav.Link>
       <Nav.Link
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
         name="About"
         href="#pricing"
         className="nav-text"
-        style={style ? styles.customTextHover : styles.customText}
+        style={styles.customText}
       >
         <InfoOutlinedIcon />
         <a>About</a>
