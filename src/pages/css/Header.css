@@ -15,3 +15,7 @@
 .navbar:hover {
   opacity: 1;
 }
+
+.dropdown {
+  background-color: rgb(214, 183, 5) !important;
+}
