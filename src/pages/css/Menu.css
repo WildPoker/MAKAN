@@ -22,3 +22,7 @@
   text-decoration: none;
   font-size: 18px;
 }
+
+.menu-select:hover {
+  color: rgb(172, 149, 2) !important;
+}

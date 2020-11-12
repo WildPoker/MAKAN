@@ -21,6 +21,7 @@ function Menu() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
   const [foodname, setFoodName] = React.useState("");
+  const [boring, setBoring] = React.useState(true);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -41,11 +42,36 @@ function Menu() {
           textColor="inherit"
           centered
         >
-          <Tab label="SILOG" name="silog" onClick={handleSubChange} />
-          <Tab label="OMELETTE" name="omelette" onClick={handleSubChange} />
-          <Tab label="SIZZLING" name="sizzler" onClick={handleSubChange} />
-          <Tab label="CHICKEN WINGS" name="wings" onClick={handleSubChange} />
-          <Tab label="OTHERS" name="others" onClick={handleSubChange} />
+          <Tab
+            label="SILOG"
+            name="silog"
+            onClick={handleSubChange}
+            className="menu-select"
+          />
+          <Tab
+            label="OMELETTE"
+            name="omelette"
+            onClick={handleSubChange}
+            className="menu-select"
+          />
+          <Tab
+            label="SIZZLING"
+            name="sizzler"
+            onClick={handleSubChange}
+            className="menu-select"
+          />
+          <Tab
+            label="CHICKEN WINGS"
+            name="wings"
+            onClick={handleSubChange}
+            className="menu-select"
+          />
+          <Tab
+            label="OTHERS"
+            name="others"
+            onClick={handleSubChange}
+            className="menu-select"
+          />
         </Tabs>
       </Paper>
       <Menus name={foodname} />
