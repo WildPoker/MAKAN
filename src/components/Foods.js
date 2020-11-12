@@ -17,7 +17,22 @@ const foods = [
   {
     id: 4,
     title: "CHICKEN WINGS",
+    name: "Classic Wings",
+  },
+  {
+    id: 5,
+    title: "CHICKEN WINGS",
     name: "Buffalo Wings",
+  },
+  {
+    id: 6,
+    title: "CHICKEN WINGS",
+    name: "Lemon Honey Glazed Wings",
+  },
+  {
+    id: 7,
+    title: "CHICKEN WINGS",
+    name: "Sweet Soy Wings",
   },
 ];
 

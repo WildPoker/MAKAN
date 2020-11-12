@@ -14,22 +14,21 @@ const useStyles = makeStyles({
 
 const styles = {
   backgroundColor: "transparent",
-  color: "gold",
+  color: "white",
 };
 
 function Menu() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  const [boring, setBoring] = React.useState(true);
+  const [foodname, setFoodName] = React.useState("");
 
   const handleChange = (event, newValue) => {
-    const name = event.target.innerHTML;
     setValue(newValue);
   };
 
   function handleSubChange(event) {
-    const { name, value } = event.target;
-    setBoring((prevValue) => {});
+    const name = event.target.innerHTML;
+    setFoodName(name);
   }
 
   return (
@@ -38,18 +37,18 @@ function Menu() {
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="primary"
+          TabIndicatorProps={{ style: { background: "#b8a60b" } }}
           textColor="inherit"
           centered
         >
           <Tab label="SILOG" name="silog" onClick={handleSubChange} />
-          <Tab label="OMELETTE" name="omelette" />
-          <Tab label="SIZZLER" name="sizzler" />
-          <Tab label="CHICKEN WINGS" name="wings" />
-          <Tab label="OTHERS" name="others" />
+          <Tab label="OMELETTE" name="omelette" onClick={handleSubChange} />
+          <Tab label="SIZZLING" name="sizzler" onClick={handleSubChange} />
+          <Tab label="CHICKEN WINGS" name="wings" onClick={handleSubChange} />
+          <Tab label="OTHERS" name="others" onClick={handleSubChange} />
         </Tabs>
       </Paper>
-      {boring ? <Menus /> : null}
+      <Menus name={foodname} />
     </div>
   );
 }

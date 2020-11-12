@@ -1,10 +1,16 @@
 import foods from "../components/Foods.js";
 
-function Menus() {
+function Menus(props) {
   return (
     <div className="menu-selection">
       {foods.map((foodItem, index) => {
-        return <a name={foodItem.title}>{foodItem.name}</a>;
+        if (foodItem.title === props.name) {
+          return (
+            <a name={foodItem.title} href="">
+              {foodItem.name}
+            </a>
+          );
+        }
       })}
     </div>
   );
