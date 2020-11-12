@@ -3,3 +3,14 @@
   background-color: #151515;
   display: block;
 }
+
+.menu-selection {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: rgb(172, 149, 2);
+}
+
+.menu-selection a {
+  margin: 0 2% 0 0;
+}

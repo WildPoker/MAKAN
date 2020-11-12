@@ -1,6 +1,6 @@
 const styles = {
   customText: {
-    color: "#b8a60b",
+    color: "white",
     fontSize: "20px",
   },
   customTextHover: {
