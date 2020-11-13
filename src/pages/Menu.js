@@ -21,7 +21,6 @@ function Menu() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
   const [foodname, setFoodName] = React.useState("");
-  const [boring, setBoring] = React.useState(true);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -55,7 +54,7 @@ function Menu() {
             className="menu-select"
           />
           <Tab
-            label="SIZZLING"
+            label="SIZZLER"
             name="sizzler"
             onClick={handleSubChange}
             className="menu-select"

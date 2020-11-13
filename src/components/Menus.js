@@ -5,11 +5,9 @@ function Menus(props) {
     <div className="menu-selection">
       {foods.map((foodItem, index) => {
         if (foodItem.title === props.name) {
-          return (
-            <a name={foodItem.title} href="">
-              {foodItem.name}
-            </a>
-          );
+          return foodItem.foodNames.map((name) => {
+            return <a href="">{name}</a>;
+          });
         }
       })}
     </div>

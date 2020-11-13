@@ -1,38 +1,47 @@
 const foods = [
   {
     id: 1,
-    title: "SIZZLING",
-    name: "Sisig Single",
+    title: "SILOG",
+    foodNames: [
+      "Tapsilog",
+      "Sisilog",
+      "Tocilog",
+      "Hotsilog",
+      "Cornsilog",
+      "Bagnetsilog",
+    ],
   },
   {
     id: 2,
-    title: "SIZZLING",
-    name: "Sisig Barkada",
+    title: "OMELETTE",
+    foodNames: [
+      "Omelette Beef",
+      "Omelette Shrimp",
+      "Omelette Chicken",
+      "Omelette Pork",
+    ],
   },
   {
     id: 3,
-    title: "SIZZLING",
-    name: "Buttered Wings",
+    title: "SIZZLER",
+    foodNames: ["Sisisg Single", "Sisig Barkada", "Buttered Wings"],
   },
   {
     id: 4,
     title: "CHICKEN WINGS",
-    name: "Classic Wings",
+    foodNames: ["Classic", "Buffalo", "Lemon Honey Glazed", "Ginger Sweet Soy"],
   },
   {
     id: 5,
-    title: "CHICKEN WINGS",
-    name: "Buffalo Wings",
-  },
-  {
-    id: 6,
-    title: "CHICKEN WINGS",
-    name: "Lemon Honey Glazed Wings",
-  },
-  {
-    id: 7,
-    title: "CHICKEN WINGS",
-    name: "Sweet Soy Wings",
+    title: "OTHERS",
+    foodNames: [
+      "Lomi",
+      "Lomi Special",
+      "Pares",
+      "Pares Mami",
+      "Bagnet",
+      "Goto Batangas",
+    ],
   },
 ];
 
