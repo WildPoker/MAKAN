@@ -2,6 +2,8 @@
   height: 100px;
   background-color: #151515;
   display: block;
+  width: 80%;
+  margin: auto;
 }
 
 .menu-selection {
@@ -13,7 +15,7 @@
 
 .menu-selection a {
   margin: 0 2% 0 0;
-  color: rgb(221, 220, 216);
+  color: #fbfcd4;
   transition: font-size 0.5s;
 }
 

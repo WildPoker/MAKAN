@@ -17,6 +17,7 @@ function Home() {
           <h1>DJ's MAKAN</h1>
           <p>BLABLABLABLA I HAVE NOTHING TO SAY</p>
         </div>
+        <hr />
       </Container>
     </div>
   );

@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 
 const styles = {
   backgroundColor: "transparent",
-  color: "white",
+  color: "#FBFCD4",
 };
 
 function Menu() {
@@ -33,7 +33,7 @@ function Menu() {
 
   return (
     <div className="menu">
-      <Paper className={classes.root} style={styles}>
+      <Paper className={classes.root} style={styles} width="75%">
         <Tabs
           value={value}
           onChange={handleChange}

@@ -6,7 +6,11 @@ function Menus(props) {
       {foods.map((foodItem, index) => {
         if (foodItem.title === props.name) {
           return foodItem.foodNames.map((name) => {
-            return <a href="">{name}</a>;
+            return (
+              <a href="" name={name}>
+                {name}
+              </a>
+            );
           });
         }
       })}
