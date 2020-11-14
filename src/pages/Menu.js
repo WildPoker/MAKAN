@@ -27,8 +27,9 @@ function Menu() {
   };
 
   function handleSubChange(event) {
-    const name = event.target.innerHTML;
+    const name = event.target.textContent;
     setFoodName(name);
+    console.log(name);
   }
 
   return (

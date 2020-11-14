@@ -3,6 +3,7 @@ const styles = {
     color: "#FBFCD4",
     fontSize: "20px",
   },
+
   customTextHover: {
     color: "#b8a60b",
     fontSize: "30px",

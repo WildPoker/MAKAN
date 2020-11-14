@@ -1,6 +1,3 @@
-.foods-info {
-  height: 500px;
-  width: 80%;
-  margin: auto;
-  background-color: rgb(255, 255, 255);
+.MultiGrid-container {
+  border-bottom: 5px solid #b8a60b !important;
 }
