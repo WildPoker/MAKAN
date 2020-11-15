@@ -2,25 +2,34 @@
   height: 100px;
   background-color: #151515;
   display: block;
+  width: 80%;
+  margin: auto;
 }
 
 .menu-selection {
   width: 100%;
+  height: 50px;
   text-align: center;
   display: inline-block;
-  color: rgb(172, 149, 2);
+  color: #fbfcd4;
+}
+
+.menu-buttons {
+  margin-top: 1%;
 }
 
 .menu-selection a {
-  margin: 0 2% 0 0;
-  color: rgb(221, 220, 216);
+  display: inline-block;
+  width: 200px;
+  color: #fbfcd4;
   transition: font-size 0.5s;
+  cursor: pointer;
+  z-index: 0 !important;
 }
 
 .menu-selection a:hover {
-  color: rgb(172, 149, 2);
-  text-decoration: none;
-  font-size: 18px;
+  color: rgb(172, 149, 2) !important;
+  font-size: 20px;
 }
 
 .menu-select:hover {

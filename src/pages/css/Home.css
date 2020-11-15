@@ -1,14 +1,13 @@
 .home {
-  border-bottom: 5px solid #b8a60b;
+  display: flex;
 }
-
 .bg-image {
   /* The image used */
   background-image: url("/src/pages/img/sisig.jpg");
 
   /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
 
   /* Full height */
   height: 750px;
@@ -19,6 +18,9 @@
   background-size: cover;
   box-shadow: 25px 25px 50px 0 rgb(0, 0, 0) inset,
     -25px -25px 50px 0 rgb(0, 0, 0) inset;
+
+  /* Add the paralaxx Effect */
+  background-attachment: fixed;
 }
 
 /* Position text in the middle of the page/image */
@@ -41,4 +43,15 @@
 
 .bg-text p {
   font-size: 20px;
+}
+
+.home hr {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: rgb(143, 108, 19);
+  border-width: 10px;
+  width: 10%;
 }

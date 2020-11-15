@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 
 const styles = {
   backgroundColor: "transparent",
-  color: "white",
+  color: "#FBFCD4",
 };
 
 function Menu() {
@@ -27,13 +27,14 @@ function Menu() {
   };
 
   function handleSubChange(event) {
-    const name = event.target.innerHTML;
+    const name = event.target.textContent;
     setFoodName(name);
+    console.log(name);
   }
 
   return (
     <div className="menu">
-      <Paper className={classes.root} style={styles}>
+      <Paper className={classes.root} style={styles} width="75%">
         <Tabs
           value={value}
           onChange={handleChange}

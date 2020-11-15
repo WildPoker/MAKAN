@@ -3,13 +3,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../pages/img/nav-logo.png";
 import Navselection from "../components/navselection";
 import styles from "../components/styles.js";
+import { useState } from "react";
 
 // --------------- HEADER ---------------
 // Logo and the list of the header
 function Selection() {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 800) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
   return (
     <div className="container-top">
-      <Navbar collapseOnSelect expand="lg" fixed="top" className="navbar">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        fixed={navbar ? "top" : null}
+        className={navbar ? "navbar active" : "navbar"}
+      >
         <Navbar.Brand href="#home" style={styles.customButton}>
           <img src={logo} />
         </Navbar.Brand>
