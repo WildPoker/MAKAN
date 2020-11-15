@@ -1,15 +1,19 @@
 /* Background styles of the Header */
 .navbar {
-  background-color: #0a0a0a;
-  background-image: url("/src/pages/img/black-felt.png");
-  box-shadow: 0 0 10px 0 black;
-  opacity: 0.98;
-  border-bottom: 5px solid #b8a60b;
+  background-color: transparent;
+  /* Positions */
+  margin: auto;
+  width: 100%;
   /* Transition effect when mouse is hovered to the Header section */
-  transition-property: opacity;
-  transition-duration: 0.1s;
-  transition-timing-function: linear;
-  transition-delay: 0.1s;
+}
+
+.navbar.active {
+  background-color: #0a0a0a;
+  background-image: url("/src/pages/img/diagonales-decalees.png");
+  /* background-image: url("/src/pages/img/black-felt.png"); */
+  box-shadow: 0 0 10px 0 black;
+
+  border-bottom: 5px solid #b8a60b;
 }
 
 .navbar:hover {

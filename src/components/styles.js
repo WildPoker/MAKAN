@@ -9,7 +9,7 @@ const styles = {
     fontSize: "30px",
   },
   customWidth: {
-    maxWidth: "1250px",
+    maxWidth: "1500px",
   },
 };
 
