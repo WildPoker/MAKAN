@@ -11,7 +11,3 @@ html,
   background-image: url("/src/pages/img/black-felt.png");
   /* background-image: url("/src/pages/img/diagonales-decalees.png"); */
 }
-
-#root {
-  display: block;
-}

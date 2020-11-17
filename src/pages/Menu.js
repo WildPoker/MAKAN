@@ -1,15 +1,10 @@
 import "./css/Menu.css";
-import React from "react";
+import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Menus from "../components/Menus.js";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
-import Typography from "@material-ui/core/Typography";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles({
   root: {
@@ -24,8 +19,9 @@ const styles = {
 
 function Menu() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-  const [foodname, setFoodName] = React.useState("");
+  const [value, setValue] = useState(0);
+  const [foodname, setFoodName] = useState("");
+  const [isExpanded, setExpanded] = useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -37,9 +33,18 @@ function Menu() {
     console.log(name);
   }
 
+  function expand() {
+    setExpanded(true);
+  }
+
   return (
     <div className="menu">
-      <Paper className={classes.root} style={styles} width="75%">
+      <Paper
+        className={classes.root}
+        style={styles}
+        width="75%"
+        onClick={expand}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
@@ -79,7 +84,7 @@ function Menu() {
           />
         </Tabs>
       </Paper>
-      <Menus name={foodname} />
+      {isExpanded && <Menus name={foodname} inExpand={isExpanded} />}
     </div>
   );
 }
