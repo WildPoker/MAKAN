@@ -1,6 +1,7 @@
 import "./css/Home.css";
 import Container from "@material-ui/core/Container";
 import styles from "../components/styles.js";
+import LightSpeed from "react-reveal/LightSpeed";
 
 //--------------- HOME INFO ----------------
 //Returning Home Elements
@@ -14,7 +15,9 @@ function Home() {
       >
         <div class="bg-image"></div>
         <div class="bg-text">
-          <h1>DJ's MAKAN</h1>
+          <LightSpeed left>
+            <h1>DJ's MAKAN</h1>
+          </LightSpeed>
           <p>BLABLABLABLA I HAVE NOTHING TO SAY</p>
         </div>
         <hr />

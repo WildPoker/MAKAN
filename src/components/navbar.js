@@ -27,7 +27,7 @@ function Selection() {
         fixed={navbar ? "top" : null}
         className={navbar ? "navbar active" : "navbar"}
       >
-        <Navbar.Brand href="#home" style={styles.customButton}>
+        <Navbar.Brand href="#" style={styles.customButton}>
           <img src={logo} />
         </Navbar.Brand>
         <Navbar.Toggle

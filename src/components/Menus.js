@@ -1,7 +1,7 @@
 import foods from "../components/Foods.js";
 import FoodsInfo from "../pages/FoodsInfo.js";
 import React, { useState } from "react";
-import Grid from "@material-ui/core/Grid";
+
 function Menus(props) {
   //Changing the menu selection when clicking a different parents button
   const [foodName, setFoodName] = useState("none");
